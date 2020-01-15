@@ -1,0 +1,51 @@
+<html lang="en">
+<head>      
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id= "nav_wrapper">
+        <nav>
+            <ul>
+                <a href="boxprinter.html">
+                    <li>Home</li>
+                </a>
+                <a href="profile.html">
+                    <li>Profiles</li>
+                </a>
+                <a href="photos.html">
+                    <li>Photos</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div id="wrapper-logout">
+        <a href="index.html">
+            <button id= "logout" onclick="logout()">
+              Logout
+            </button>
+        </a>
+    </div>    
+    <div id= "box_form">        
+            <input type="number" name="y-pos" id="y-pos" placeholder="y-position">
+            <input type="number" name="x-pos" id="x-pos" placeholder="x-position">
+            <input type="color" name="color_picker" id="color_picker">
+            <input type="number" name="width" id="width" placeholder="Width">
+            <input type="number" name="heigth" id="heigth" placeholder="Heigth">
+            <button id ="create" onclick="create()">create</button>
+    </div>
+    <div id = "play-ground" style="width: 1260px; height:790px;
+                                    background-color: blanchedalmond; 
+                                    position: fixed; top: 125px; 
+                                    border:1px solid blue;
+                                    overflow: hidden;">
+        <p id="box_message">Play Ground</p>
+        <div id ='box' style="position: relative;"></div>
+    </div>
+     <div id ='box'></div>
+</body>
+</html>
